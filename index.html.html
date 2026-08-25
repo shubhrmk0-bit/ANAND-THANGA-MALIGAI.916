@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANAND THANGA MALIGAI | Fine Jewellery</title>
+<meta name="description" content="ANAND THANGA MALIGAI — timeless gold, diamond and bridal jewellery crafted for life's special moments.">
+<style>
+:root{
+  --gold:#c9a24b; --gold2:#f0d58a; --ink:#17130d; --cream:#f8f2e7;
+  --muted:#756c5d; --white:#fffdf8; --line:#e7dcc9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--white);color:var(--ink);line-height:1.6}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:19px;font-weight:700;letter-spacing:2px}
+.logo small{display:block;font-size:9px;letter-spacing:4px;color:var(--gold);text-align:center;margin-top:-3px}
+.links{display:flex;gap:28px;font-size:14px}
+.links a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:90px 24px;background:
+ radial-gradient(circle at 50% 40%,rgba(201,162,75,.22),transparent 35%),
+ linear-gradient(135deg,#211a10,#4a371d 48%,#16120d)}
+.hero-inner{max-width:850px;color:white}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;color:var(--gold2);font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(44px,8vw,82px);line-height:1.02;letter-spacing:2px;margin-bottom:20px}
+.hero p{max-width:650px;margin:0 auto 32px;color:#eee5d5;font-size:18px}
+.btn{display:inline-block;padding:13px 24px;border:1px solid var(--gold2);color:#20170b;background:var(--gold2);font-size:13px;letter-spacing:1px;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:#ffe9a9}
+.btn.alt{background:transparent;color:white;margin-left:8px}
+.section{max-width:1180px;margin:auto;padding:85px 24px}
+.section-head{text-align:center;max-width:650px;margin:0 auto 45px}
+.section-head h2{font-size:38px;margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--cream);border:1px solid var(--line);overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(45,30,10,.08)}
+.card-art{height:230px;display:grid;place-items:center;background:
+ radial-gradient(circle at 50% 42%,rgba(240,213,138,.5),transparent 18%),
+ linear-gradient(145deg,#eee0c4,#faf7ee)}
+.jewel{font-size:76px;filter:drop-shadow(0 12px 10px rgba(75,48,8,.18))}
+.card-body{padding:20px}.card-body h3{font-size:21px;margin-bottom:5px}.card-body p{color:var(--muted);font-size:14px}
+
+.gallery{background:#fffdf8}
+.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.photo-grid figure{margin:0;background:var(--cream);border:1px solid var(--line);overflow:hidden}
+.photo-grid img{width:100%;height:260px;display:block;object-fit:cover;transition:transform .35s}
+.photo-grid figure:hover img{transform:scale(1.04)}
+.photo-grid figcaption{padding:14px 16px;font-size:15px;text-align:center}
+
+.about{background:var(--ink);color:white}
+.about-inner{max-width:1180px;margin:auto;padding:85px 24px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about h2{font-size:42px;margin-bottom:18px}.about p{color:#d7cdbb;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.stat{border:1px solid #574a35;padding:28px;text-align:center}.stat strong{display:block;color:var(--gold2);font-size:32px}.stat span{font-size:12px;color:#d7cdbb;letter-spacing:1px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:30px;border:1px solid var(--line);text-align:center}.icon{font-size:30px;color:var(--gold);margin-bottom:12px}.feature h3{margin-bottom:7px}.feature p{color:var(--muted);font-size:14px}
+.contact{background:var(--cream)}
+.contact-inner{max-width:850px;margin:auto;text-align:center}.contact h2{font-size:40px;margin-bottom:10px}.contact p{color:var(--muted);margin-bottom:24px}
+footer{background:#0e0c08;color:#cfc5b3;text-align:center;padding:35px 20px;font-size:13px}footer strong{color:var(--gold2)}
+.float{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;border-radius:50px;padding:13px 18px;font-family:Arial,sans-serif;font-size:14px;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:800px){
+ .photo-grid{grid-template-columns:repeat(2,1fr)}
+ .links{display:none}.menu{display:block}.nav-inner{padding:13px 18px}
+ .links.open{display:flex;position:absolute;top:62px;left:0;right:0;background:var(--white);padding:20px;flex-direction:column;gap:15px;border-bottom:1px solid var(--line)}
+ .grid{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr;gap:40px}.features{grid-template-columns:1fr}
+}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr}.hero{min-height:72vh}.btn{display:block;margin:8px auto!important;max-width:240px}.section{padding:65px 18px}.about-inner{padding:65px 18px}}
+</style>
+</head>
+<body>
+<header class="nav">
+ <div class="nav-inner">
+  <a class="logo" href="#home">ANAND THANGA MALIGAI<small>JEWELLERY</small></a>
+  <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+  <nav class="links" id="links">
+   <a href="#home">Home</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="eyebrow">Since the 1990s • A tradition of trust</div>
+  <h1>Timeless Gold.<br>Endless Moments.</h1>
+  <p>Discover jewellery made to celebrate love, family and every milestone — from everyday elegance to unforgettable bridal moments.</p>
+  <a class="btn" href="#collections">Explore Collections</a>
+  <a class="btn alt" href="#contact">Visit Our Store</a>
+ </div>
+</section>
+
+<section class="section" id="collections">
+ <div class="section-head"><div class="eyebrow">Our Collections</div><h2>Made for Your Moments</h2><p>Elegant pieces with a timeless character, thoughtfully selected for every occasion.</p></div>
+ <div class="grid">
+  <article class="card"><div class="card-art"><div class="jewel">💍</div></div><div class="card-body"><h3>Gold Jewellery</h3><p>Classic chains, bangles, rings and more.</p></div></article>
+  <article class="card"><div class="card-art"><div class="jewel">💎</div></div><div class="card-body"><h3>Diamond Jewellery</h3><p>Refined sparkle for life's special moments.</p></div></article>
+  <article class="card"><div class="card-art"><div class="jewel">👑</div></div><div class="card-body"><h3>Bridal Collection</h3><p>Statement pieces for your big day.</p></div></article>
+  <article class="card"><div class="card-art"><div class="jewel">✨</div></div><div class="card-body"><h3>Daily Wear</h3><p>Light, graceful designs for every day.</p></div></article>
+ </div>
+</section>
+
+
+<section class="section gallery" id="gallery">
+ <div class="section-head">
+  <div class="eyebrow">Gold Ornaments</div>
+  <h2>Explore Our Jewellery</h2>
+  <p>A glimpse of the timeless gold styles that inspire our collections.</p>
+ </div>
+ <div class="photo-grid">
+  <figure><img src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2025/store-promotion/IND/Salem-Showroom-Tamil-Nadu/Mobile-1.jpg" alt="Traditional Indian gold jewellery collection"><figcaption>Traditional Gold Collection</figcaption></figure>
+  <figure><img src="https://images.goodreturns.in/img/2025/09/gold-prices11200-1757743436.jpg" alt="Gold necklace, earrings and bangles"><figcaption>Necklaces &amp; Bangles</figcaption></figure>
+  <figure><img src="https://images.goodreturns.in/img/2026/03/goldrateinindia122-1773815222.jpg" alt="Traditional gold necklace and earrings"><figcaption>Classic Gold Ornaments</figcaption></figure>
+  <figure><img src="https://www.minarjewellers.com/cdn/shop/articles/Top_10_Timeless_Gold_Jewellery_Pieces_for_Every_Collection.png?v=1773146215&width=1840" alt="Gold rings, chains and earrings"><figcaption>Everyday Gold Jewellery</figcaption></figure>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="about-inner">
+  <div><div class="eyebrow">Our Story</div><h2>A Name You Can Trust</h2><p>At ANAND THANGA MALIGAI, jewellery is more than an ornament. It is a symbol of relationships, celebrations and memories that last for generations.</p><p>We bring together beautiful designs, careful craftsmanship and a warm shopping experience for every customer.</p></div>
+  <div class="stats"><div class="stat"><strong>100%</strong><span>Customer Care</span></div><div class="stat"><strong>24K</strong><span>Gold Tradition</span></div><div class="stat"><strong>∞</strong><span>Timeless Style</span></div><div class="stat"><strong>1</strong><span>Trusted Destination</span></div></div>
+ </div>
+</section>
+
+<section class="section" id="why">
+ <div class="section-head"><div class="eyebrow">The Anand Difference</div><h2>Why Choose Us?</h2></div>
+ <div class="features">
+  <div class="feature"><div class="icon">✦</div><h3>Beautiful Designs</h3><p>Traditional charm meets contemporary elegance.</p></div>
+  <div class="feature"><div class="icon">◈</div><h3>Trusted Quality</h3><p>We focus on quality, transparency and lasting value.</p></div>
+  <div class="feature"><div class="icon">♡</div><h3>Personal Service</h3><p>Friendly guidance to help you find the right piece.</p></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="section contact-inner">
+  <div class="eyebrow">Come Visit Us</div><h2>Let's Find Your Perfect Jewellery</h2>
+  <p>For enquiries, new arrivals and custom requirements, get in touch with ANAND THANGA MALIGAI.</p>
+  <a class="btn" href="tel:+919962221916">Call Us</a>
+  <a class="btn alt" style="color:#20170b;border-color:var(--gold);background:transparent" href="https://wa.me/919999999999" target="_blank">WhatsApp Us</a>
+  <p style="margin-top:25px;font-size:14px">📍 No 193 Main Road, Mangadu, Chennai &nbsp; • &nbsp; 📞 +91 99622 21916</p>
+ </div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> <strong>ANAND THANGA MALIGAI</strong>. All rights reserved.</footer>
+<a class="float" href="https://wa.me/919999999999" target="_blank">WhatsApp</a>
+<script>
+function toggleMenu(){document.getElementById('links').classList.toggle('open')}
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
